@@ -1,3 +1,3 @@
 import postgres from 'postgres'
 
-export const sql = postgres('postgresql://docker:docker@localhost:5432/postgresql')
+export const sql = postgres('postgresql://docker:docker@localhost:5432/postgres')

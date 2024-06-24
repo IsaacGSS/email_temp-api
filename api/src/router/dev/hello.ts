@@ -7,7 +7,7 @@ export default async function Hello(app: FastifyInstance) {
         return reply.redirect('https://github.com/IsaacGSS/email_temp-api')
     })
 
-    app.get('/dev/hello', () => {
+    app.get('/hello', () => {
         console.log('Hello API')
 
         return { Hello: 'World'}

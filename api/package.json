@@ -4,7 +4,9 @@
   "main": "index.js",
   "scripts": {
     "dev": "tsx watch ./src/server.ts",
-    "dev:setup": "tsx ./src/setup.ts"
+    "db:setup": "tsx ./src/db/scripts/setup.ts",
+    "db:seed": "tsx ./src/db/scripts/seed.ts",
+    "db:delete": "tsx ./src/db/scripts/delete.ts"
   },
   "author": "",
   "license": "ISC",
@@ -16,11 +18,6 @@
   },
   "devDependencies": {
     "@types/node": "^20.14.7",
-    "eslint": "^8.57.0",
-    "eslint-config-standard": "^17.1.0",
-    "eslint-plugin-import": "^2.25.2",
-    "eslint-plugin-n": "^15.0.0 || ^16.0.0 ",
-    "eslint-plugin-promise": "^6.0.0",
     "tsx": "^4.15.7",
     "typescript": "^5.5.2"
   }

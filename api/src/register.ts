@@ -1,14 +1,15 @@
-
 import fastify from "fastify";
-import Hello from "./routers/dev/hello";
-import { Clients } from "./routers/clients";
+import { User } from "./router/user";
+import Hello from "./router/dev/hello";
+
 
 export const app = fastify() 
 
-// register routers !Dev
-app.register(Hello)
+app.register(User, {
+    prefix: '/users'
+})
 
-// register routers
-app.register(Clients, {
-    prefix: '/clients'
+//* register routers !Dev */
+app.register(Hello, {
+    prefix: '/dev'
 })
